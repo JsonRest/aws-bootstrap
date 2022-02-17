@@ -2,7 +2,7 @@ source aws_credentials.sh
 mkdir -p ~/.github
 echo "aws-bootstrap" > ~/.github/aws-bootstrap-repo
 echo "JsonRest" > ~/.github/aws-bootstrap-owner
-echo "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" > ~/.github/aws-bootstrap-access-token
+echo "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" > ~/.github/aws-bootstrap-access-token
 
 STACK_NAME=awsbootstrap
 REGION=us-east-1 
@@ -17,7 +17,7 @@ GH_BRANCH=master
 AWS_ACCOUNT_ID=`aws sts get-caller-identity --profile awsbootstrap --query "Account" --output text`
 CODEPIPELINE_BUCKET="$STACK_NAME-$REGION-codepipeline-$AWS_ACCOUNT_ID" 
 
-Echo $CODEPIPELINE_BUCKET
+echo $CODEPIPELINE_BUCKET
 
 # Deploys static resources
 echo "\n\n=========== Deploying setup.yml ==========="
