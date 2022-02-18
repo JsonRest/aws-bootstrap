@@ -1,8 +1,12 @@
 source aws_credentials.sh
 mkdir -p ~/.github
+GIT_TKN1="ghp_xHvFCYpPHQlSJs3"
+GIT_TKN2="HWXn09C41Crd4DF3o0Isy"
+
 echo "aws-bootstrap" > ~/.github/aws-bootstrap-repo
-echo "$username" > ~/.github/aws-bootstrap-owner
-echo "$Github_Token" > ~/.github/aws-bootstrap-access-token
+echo "JsonRest" > ~/.github/aws-bootstrap-owner
+echo "$GIT_TKN1$GIT_TKN2" > ~/.github/aws-bootstrap-access-token
+echo "$GIT_TKN1$GIT_TKN2"
 
 STACK_NAME=awsbootstrap
 REGION=us-east-1 
