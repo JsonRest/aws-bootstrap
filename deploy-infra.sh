@@ -57,3 +57,9 @@ if [ $? -eq 0 ]; then
     --profile awsbootstrap \
     --query "Exports[?ends_with(Name,'LBEndpoint')].Value" 
 fi
+
+echo LBEndpoint
+echo SubnetAZ1
+echo SubnetAZ2
+echo VPC
+echo InternetGateway
