@@ -58,8 +58,4 @@ if [ $? -eq 0 ]; then
     --query "Exports[?ends_with(Name,'LBEndpoint')].Value" 
 fi
 
-echo LBEndpoint
-echo SubnetAZ1
-echo SubnetAZ2
-echo VPC
-echo InternetGateway
+echo "Deployment end"
