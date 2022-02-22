@@ -12,7 +12,7 @@ STACK_NAME=awsbootstrap
 REGION=us-east-1 
 CLI_PROFILE=awsbootstrap
 EC2_INSTANCE_TYPE=t2.micro 
-DOMAIN=educative-cloud-course.com
+DOMAIN=pgcapstone.com
 
 GH_ACCESS_TOKEN=$(cat ~/.github/aws-bootstrap-access-token)
 GH_OWNER=$(cat ~/.github/aws-bootstrap-owner)
